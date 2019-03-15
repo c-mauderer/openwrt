@@ -214,9 +214,9 @@ endef
 TARGET_DEVICES += ubnt_routerstation-pro
 
 define Device/ubnt_acb-isp
+  $(Device/ubnt)
   ATH_SOC := qca9533
   IMAGE_SIZE := 15744k
-  DEVICE_PACKAGES := -uboot-envtools
   DEVICE_TITLE := Ubiquiti airCube ISP
   UBNT_BOARD := ACB-ISP
   UBNT_TYPE := ACB
