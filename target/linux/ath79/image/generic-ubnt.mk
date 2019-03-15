@@ -212,3 +212,14 @@ define Device/ubnt_routerstation-pro
   UBNT_CHIP := ar7100pro
 endef
 TARGET_DEVICES += ubnt_routerstation-pro
+
+define Device/ubnt_acb-isp
+  ATH_SOC := qca9533
+  IMAGE_SIZE := 15744k
+  DEVICE_PACKAGES := -uboot-envtools
+  DEVICE_TITLE := Ubiquiti airCube ISP
+  UBNT_BOARD := ACB-ISP
+  UBNT_TYPE := ACB
+  UBNT_CHIP := qca9533
+endef
+TARGET_DEVICES += ubnt_acb-isp
