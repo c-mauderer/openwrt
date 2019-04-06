@@ -10,11 +10,6 @@
 	compatible = "ubnt,acb-isp", "qca,qca9533";
 	model = "Ubiquiti airCube ISP";
 
-	aliases {
-		serial0 = &uart;
-	};
-
-
 	keys {
 		compatible = "gpio-keys";
 
@@ -25,9 +20,6 @@
 			debounce-interval = <60>;
 		};
 	};
-};
-
-&pinmux {
 };
 
 &spi {
