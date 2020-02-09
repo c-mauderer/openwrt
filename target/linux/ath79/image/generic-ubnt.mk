@@ -103,6 +103,7 @@ define Device/ubnt_acb-isp
   UBNT_CHIP := qca9533
   UBNT_TYPE := ACB
   UBNT_VERSION := 2.5.0
+  DEVICE_PACKAGES += kmod-ath10k-ct-smallbuffers ath10k-firmware-qca988x-ct
 endef
 TARGET_DEVICES += ubnt_acb-isp
 

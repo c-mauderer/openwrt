@@ -23,6 +23,7 @@ case "$FIRMWARE" in
 	ubnt,nanostation-ac|\
 	ubnt,nanostation-ac-loco|\
 	ubnt,unifiac-pro|\
+	ubnt,acb-isp|\
 	yuncore,a770)
 		caldata_extract "art" 0x5000 0x844
 		;;
